@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="css/reset.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="modal.js"></script>
+</head>
+<body>
+  <!-- 모달 -->
+  <div id="modal">
+    <div id="modalContent">
+      <form id="inputTitleWrapper">
+        <h2>방 이름</h2>
+        <input type="text" id="inputTitle"/>
+        <div id="modalButtonsWrapper">
+          <input type="submit" value="생성" id="modalButton"/>
+          <button type="button" id="modalButton" class="modalOutButton">취소</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="leftSide">
+    <div id="profileContainer">
+      <div id="profileImg">
+      </div>
+      <div id="profileBox">
+        <div id="profileInfo">
+          <h2>[닉네임] 님</h2>
+          <h4>0승 0패 (00%)</h4>
+        </div>
+        <div id="buttonsWrapper">
+          <button id="profileButton">로그아웃</button>
+          <button id="profileButton">정보 수정</button>
+        </div>
+      </div>
+    </div>
+    <div id="logo">
+    </div>
+  </div>
+
+  <div id="rightSide">
+    <button id="reloadButton" type="button"></button>
+    <div id="contents">
+      <div id="menu">
+        <div id="contents1">
+          <button id="bigButton" class="createGame">방만들기</button>
+        </div>
+        <div id="hideContents">
+          <button id="bigButton">랭킹</button>
+        </div>
+      </div>
+      <div id="contents2">
+        <div id="roomList">
+          <!-- room 요소가 for문으로 반복되어야 함 -->
+          <div id="room">
+            <div id="roomNo">0001</div>
+            <div id="roomTitle">방제목</div>
+          </div>
+          <div id="room">
+            <div id="roomNo">0001</div>
+            <div id="roomTitle">방제목</div>
+          </div>
+          <div id="room">
+            <div id="roomNo">0001</div>
+            <div id="roomTitle">방제목</div>
+          </div>
+          <div id="room">
+            <div id="roomNo">0001</div>
+            <div id="roomTitle">방제목</div>
+          </div>
+          <div id="room">
+            <div id="roomNo">0001</div>
+            <div id="roomTitle">방제목</div>
+          </div>
+          <!-- 여기까지 for문 -->
+        </div>
+        <div id="pageMoveButtonsWrapper">
+          <button id="pageMoveButton">&lt;</button>
+          <button id="pageMoveButton">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
