@@ -110,31 +110,36 @@
   height: 600px;
   background-image: url(/img/board.png);
 }
-
-.boardMain > ul {
+.boardMain > ul{
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+}
+.row > ul{
   display: flex;
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
 }
-.col {
+.columns{
+  margin: 1px;
+  width: 29.5px;
+  height: 29.5px;
 }
-.col > li {
-  width: 15px;
-  height: 15px;
-  text-align: center;
-  margin: 12px;
-  cursor: pointer;
-}
-.col > li > span {
-  font-size: 15px;
-  display: block;
-  height: 100%;
+.st{
   width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: cover;
+  z-index: 999;
+  
 }
-
-
+.st:hover{
+  background-image: url(/img/stone1.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.5;
+}
 /*============================
 #footer
 ============================*/
@@ -160,6 +165,18 @@
   text-align: center;
   line-height: 150px;
   font-size: 30px;
+}
+.st1{
+  background-image: url(/img/stone1.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.st2{
+  background-image: url(/img/stone2.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .btn {
   width: 350px;

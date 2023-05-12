@@ -7,6 +7,28 @@
     <title>OmokGame</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="Gamelayout.css" />
+    <script>
+      window.onload = function(){
+        var stone = "st1";
+        const col = document.querySelectorAll(".boardMain > ul > li");
+        col.forEach((e, i) =>{
+            const row = e.querySelectorAll("ul > li");
+            row.forEach((e2,i2)=>{
+                e2.addEventListener("click", ()=>{
+                    e2.querySelector("div").classList.add(stone);
+                    
+                    if(stone=="st1"){
+                      stone="st2";
+
+                    }else{
+                      stone="st1";
+                    }
+                });
+            });
+        });
+
+      }
+    </script>
   </head>
   <body>
     <div class="wrap">
@@ -48,402 +70,444 @@
           </div>
           <div class="boardMain">
             <ul>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
-              <li>
-                  <ul class="col">
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                      <li><span>.</span></li>
-                  </ul>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
               </li>
+              <li class="row">
+                <ul>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                  <li class="columns"><div class="st"></div></li>
+                </ul>
+              </li>
+
               
             </ul>
           </div>
