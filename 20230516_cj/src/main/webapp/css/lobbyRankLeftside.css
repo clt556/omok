@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+button, input[type=submit], input[type=button] {
+  cursor: pointer;
+}
+
+.leftSide {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.42);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+}
+#profileImg {
+  width: 216px;
+  height: 226px;
+  margin-bottom: 18px;
+}
+#profileImg > img {
+  width: 100%;
+  height: 100%;
+}
+#profileBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  width: 216px;
+  height: 241px;
+  
+  background: #BDDC89;
+  border: 0.7px solid #AAAAAA;
+  border-radius: 20px;
+}
+#profileInfo {
+  text-align: center;
+  margin-top: 24px;
+}
+#profileInfo > h3 {
+  margin-top: 11px;
+}
+#buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  justify-content: space-evenly
+}
+#profileButton {
+  box-sizing: border-box;
+
+  width: 91px;
+  height: 37px;
+
+  background: #54AD56;
+  border: 0.5px solid #AAAAAA;
+  border-radius: 10px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+
+  color: black;
+}
+.logo {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px;
+  
+  flex : 1 0 auto;
+}

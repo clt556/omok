@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link href="../image/square_logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/project/css/reset.css">
+    <link rel="stylesheet" href="/project/css/common.css">
+    <link rel="stylesheet" href="/project/css/login.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- 로그인 -->
+        <div class="login">
+          <form action="" method="post">
+            <img height=200px src="../image/login_mococo.gif">
+            <div class="font_title">로그인</div>
+            <br>
+            <div class="input_wrapper">
+                <input class="reg_login_input login_input" type="text" placeholder="Id" />
+                <input class="reg_login_input login_input" type="password" placeholder="Password" />
+                <div class="input_error">
+                    아이디 또는 비밀번호가 잘못 되었습니다.
+                </div>
+            </div>
+            <br>
+            <div class="button_wrapper">
+                <input class="green_button login_button submit" type="submit" value="접속"></button>
+                <button type="button" class="green_button login_button" onClick="location.href='register.html'">회원가입</button>
+            </div>
+          </form>
+        </div>
+        <!-- 랭킹 -->
+        <div class="ranking">
+            <div class="logo">
+                <img src="../image/org_logo.png">
+            </div>
+            <br>
+            <div class="font_title scroll-text">
+                <p class="p">명예의 전당</p>
+            </div>
+          <div class="rank_card" style="background-color: #ffe000;"><img src="../image/login_gold.png"><span>Username_1</span></div>
+          <div class="rank_card" style="background-color: #d5d5d5;"><img src="../image/login_silver.png"><span>Username_2</span></div>
+          <div class="rank_card" style="background-color: #f09f49;"><img src="../image/login_bronze.png"><span>Username_3</span></div>
+          <div class="rank_card"><span>Username_4</span></div>
+          <div class="rank_card"><span>Username_5</span></div>
+        </div>
+   </div>  
+</body>
+</html>

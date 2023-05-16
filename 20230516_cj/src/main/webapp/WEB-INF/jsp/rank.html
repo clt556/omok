@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로비: 랭크</title>
+  <link href="../image/square_logo.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/lobbyRankLeftside.css">
+  <link rel="stylesheet" href="../css/rank.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/modal.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#leftSideWrapper").load("lobbyRankLeftside.html");
+    });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div id="leftSideWrapper">
+    </div>
+
+    <div class="rightSide">
+      <button class="reloadButton" type="button" onclick="window.location.reload()"></button>
+      <div class="contents">
+        <div class="menu">
+          <div class="hideContents">
+            <button class="bigButton notNow" onclick="location.href='lobby.html'">방목록</button>
+          </div>
+          <div class="contents1">
+            <button class="bigButton">랭킹</button>
+          </div>
+        </div>
+        <div class="contents2">
+          <div class="rankList">
+            <table class="rankTable rankTh">
+              <tr>
+                <th>랭크</th>
+                <th>아이디</th>
+                <th>닉네임</th>
+                <th><button class="changeSortButton">승수</button></th>
+              </tr>
+            </table>
+            <table class="rankTable rankTd">
+              <!-- tr이 for문으로 반복되어야 함 -->
+              <tr>
+                <td>1위</td>
+                <td>ddd</td>
+                <td>ddd</td>
+                <td>5/5</td>
+              </tr>
+              <tr>
+                <td>2위</td>
+                <td>ddd</td>
+                <td>ddd</td>
+                <td>4/5</td>
+              </tr>
+              <tr>
+                <td>3위</td>
+                <td>ddd</td>
+                <td>ddd</td>
+                <td>3/5</td>
+              </tr>
+              <tr>
+                <td>4위</td>
+                <td>ddd</td>
+                <td>ddd</td>
+                <td>2/5</td>
+              </tr>
+              <tr>
+                <td>5위</td>
+                <td>ddd</td>
+                <td>ddd</td>
+                <td>1/5</td>
+              </tr>
+              <!-- 여기까지 for문 -->
+            </table>
+          </div>
+          <div class="pageMoveButtonsWrapper">
+            <button class="green_button pageMoveButton">&lt;</button>
+            <button class="green_button pageMoveButton">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
