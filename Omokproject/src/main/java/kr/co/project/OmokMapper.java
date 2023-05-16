@@ -1,5 +1,11 @@
 package kr.co.project;
 
-public class OmokMapper {
+import java.util.Map;
 
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface OmokMapper {
+	PlayerVO login(Map map);
 }
+	
