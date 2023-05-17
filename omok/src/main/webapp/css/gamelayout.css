@@ -1,0 +1,249 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  position: relative;
+  background-image: url(../image/board_background.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*============================
+#header
+============================*/
+#header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.time {
+  border: 1px solid #000;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.time > p {
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  line-height: 70px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.roomArea {
+  border: 1px solid #000;
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+#roomNo {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  color: #fff;
+}
+#roomName {
+  width: 85%;
+  height: 100%;
+  line-height: 50px;
+  border-radius: 10px;
+  color: #fff;
+}
+/*============================
+#main
+============================*/
+#main {
+  height: 630px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.player {
+  border: 1px solid #000;
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.playerInfo {
+  width: 250px;
+  height: 500px;
+  margin: 30px 25px;
+  border-radius: 10px;
+}
+.playerName {
+  border: 1px solid #000;
+  width: 100%;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.imgArea {
+  border: 1px solid #000;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.imgArea > img {
+}
+.textArea {
+  border: 1px solid #000;
+  width: 100%;
+  height: 100px;
+  padding: 15px 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.textArea > p {
+  text-align: center;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.board {
+  display: flex;
+  border-radius: 10px;
+  /* background-color: #fff; */
+}
+.stone {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+.boardMain {
+  border: 1px solid #000;
+  width: 600px;
+  height: 600px;
+  background-image: url(../image/board.png);
+  border-radius: 10px;
+}
+.boardMain > ul {
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  border-radius: 10px;
+}
+.row > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.columns {
+  margin: 1px;
+  width: 29.5px;
+  height: 29.5px;
+  border-radius: 10px;
+}
+.st {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: cover;
+  z-index: 999;
+  border-radius: 10px;
+}
+.st:hover {
+  background-image: url(../image/stone1.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.5;
+}
+/*============================
+#footer
+============================*/
+#footer {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.watchPlayer {
+  border: 1px solid #000;
+  width: 350px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+}
+.chatting {
+  border: 1px solid #000;
+  width: 600px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+}
+.st1 {
+  background-image: url(../image/stone1.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.st2 {
+  background-image: url(../image/stone2.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.btn {
+  width: 600px;
+  height: 150px;
+  /* border: 1px solid #000; */
+  text-align: center;
+  line-height: 150px;
+  border-radius: 10px;
+  /* background-color: #fff; */
+}
+.styled {
+  width: 150px;
+  /* height: 150px; */
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 2rem;
+  text-align: center;
+  /* color: #fff; */
+  border-radius: 10px;
+  background-color: #fff7b1;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(242, 248, 240, 0.73);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
