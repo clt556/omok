@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,11 @@
     <link rel="stylesheet" href="/project/css/login.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<script>
+		 $(function () {
+			<c:if test="${!empty miss}">
+				$(".input_error").css('display', 'block');
+			</c:if>
+		 });
 		function check(){
 			if($("#id").val().trim()==''){
     			alert("아이디를 입력해 주세요");
@@ -47,7 +53,7 @@
             <br>
             <div class="button_wrapper">
                 <input class="green_button login_button submit" type="submit" value="접속">
-                <button type="button" class="green_button login_button" onClick="location.href='register.do'">회원가입</button>
+                <button type="button" class="green_button login_button" onClick="location.href='join.do'">회원가입</button>
             </div>
           </form>
         </div>
@@ -60,11 +66,13 @@
             <div class="font_title scroll-text">
                 <p class="p">명예의 전당</p>
             </div>
-          <div class="rank_card" style="background-color: #ffe000;"><img src="/project/image/login_gold.png"><span>Username_1</span></div>
-          <div class="rank_card" style="background-color: #d5d5d5;"><img src="/project/image/login_silver.png"><span>Username_2</span></div>
-          <div class="rank_card" style="background-color: #f09f49;"><img src="/project/image/login_bronze.png"><span>Username_3</span></div>
-          <div class="rank_card"><span>Username_4</span></div>
-          <div class="rank_card"><span>Username_5</span></div>
+             <c:set var="num" value="0"/>
+		          <div class="rank_card" style="background-color: #ffe000;"><img src="/project/image/login_gold.png"><span>${list.get(num).nickname}</span></div>
+		          <div class="rank_card" style="background-color: #d5d5d5;"><img src="/project/image/login_silver.png"><span>${list.get(num+1).nickname}</span></div>
+		          <div class="rank_card" style="background-color: #f09f49;"><img src="/project/image/login_bronze.png"><span>${list.get(num+2).nickname}</span></div>
+		          <div class="rank_card"><span>${list.get(num+3).nickname}</span></div>
+		          <div class="rank_card"><span>${list.get(num+4).nickname}</span></div>
+
    		</div>
    </div>  
 </body>

@@ -10,5 +10,7 @@ public class PlayerVO {
 	private String nickname;
 	private int victory;
 	private int total;
+	private int num;
+	private int rnum;
 
 }

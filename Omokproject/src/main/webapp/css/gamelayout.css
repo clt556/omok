@@ -171,7 +171,7 @@
   border-radius: 10px;
 }
 .st:hover {
-  background-image: url(/img/stone1.png);
+  background-image: url(../image/stone1.png);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -204,13 +204,13 @@
   font-size: 30px;
 }
 .st1 {
-  background-image: url(/img/stone1.png);
+  background-image: url(../image/stone1.png);
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 .st2 {
-  background-image: url(/img/stone2.png);
+  background-image: url(../image/stone2.png);
   width: 100%;
   height: 100%;
   background-size: cover;

@@ -10,8 +10,6 @@
    int _page = (((Integer) request.getAttribute("page")) - 1) * 5;
    int prior = ((Integer) request.getAttribute("page")) - 1;
    int next = ((Integer) request.getAttribute("page")) + 1;
-   if (prior < 1) prior = 1;
-   if (next > boards.size() / 5 + 1) next -= 1;
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +24,11 @@
   <link rel="stylesheet" href="/project/css/lobby.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script type="text/javascript" src="/project/js/modal.js"></script>
+  <!-- <script type="text/javascript">
+    $(document).ready(function() {
+      $("#leftSideWrapper").load("lobbyRankLeftside.html");
+    });
+  </script> -->
   <title>로비 방목록</title>
 </head>
 <body>
@@ -44,7 +47,7 @@
     </div>
 
     <div id="leftSideWrapper">
-   		<%@include file="/WEB-INF/jsp/lobbyRankLeftside.jsp" %>
+		<%@include file="/WEB-INF/jsp/lobbyRankLeftside.jsp" %>
     </div>
 
     <div class="rightSide">
@@ -55,7 +58,7 @@
             <button class="createGame bigButton">방만들기</button>
           </div>
           <div class="hideContents">
-            <button class="bigButton notNow" onclick="location.href='rank.do'">랭킹</button>
+            <button class="bigButton notNow" onclick="location.href='rank.html'">랭킹</button>
           </div>
         </div>
         <div class="contents2">
@@ -64,13 +67,8 @@
 		  		if (i >= keys.size()) break;
 		  	%>
             <div class="room" onclick="location.href='game?roomNo=<%=keys.get(i) %>'">
-              <% if (boards.get(keys.get(i)).turn == 0) {%>
-              <div class="roomNo"><%=keys.get(i) %></div>
-              <div class="roomTitle"><%=boards.get(keys.get(i)).title %> (빈 방)</div>
-              <%} else {%>
-              <div class="roomNo" style="background-color:#54AD56;"><%=keys.get(i) %></div>
-              <div class="roomTitle" style="background-color:#54AD56;"><%=boards.get(keys.get(i)).title %></div>
-              <%} %>
+              <div class="roomNo" <c:if test="${boards.get(keys.get(i)).player2 != null }">style="background-color:#54AD56;"</c:if>><%=keys.get(i) %></div>
+              <div class="roomTitle" <c:if test="${boards.get(keys.get(i)).player2 != null }">style="background-color:#54AD56;"</c:if>><%=boards.get(keys.get(i)).title %> <c:if test="${boards.get(keys.get(i)).player2 == null }">(빈 방)</c:if></div>
             </div>
 			<%} %>
           </div>

@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="kr.co.project.OmokMapper">
+
 	<select id="login" parameterType="java.util.Map" resultType="kr.co.project.PlayerVO">
-		SELECT * FROM player WHERE id = #{id} AND password = #{password}
+		SELECT player_pk playerPK, id, password, nickname, victory, total FROM player WHERE id = #{id} AND password = #{password}
+	</select>
+	
+	<update id="updateInfo" parameterType="kr.co.project.PlayerVO">
+		UPDATE player SET password = #{password} , nickname = #{nickname} WHERE player_pk = #{playerPK}
+	</update>
+	<!-- 창준 -->
+	<update id="updateVictory" parameterType="kr.co.project.PlayerVO">
+		UPDATE player
+		SET victory = #{victory}, total = #{total}
+		WHERE player_pk = #{playerPK}
+	</update>
+	<!-- 서영 -->
+	<insert id="insert" parameterType="kr.co.project.PlayerVO">
+		INSERT INTO player (
+			player_pk, id, password, nickname, victory, total
+		) VALUES (
+			player_seq.nextval ,#{id}, #{password}, #{nickname}, 0, 0
+		)
+	</insert>
+	
+	<select id="dupCheck" parameterType="java.util.Map" resultType="int">
+		SELECT COUNT(*) FROM player WHERE id=#{id} 
+	</select>
+	<!-- 지원 -->
+	<select id="allList" resultType="kr.co.project.PlayerVO"
+		parameterType="kr.co.project.PlayerVO">
+		<![CDATA[
+			select * from (select rownum as rnum, A.* from (select * from system.player order by victory desc , player_pk asc) A 
+			where rownum < #{num}*5-4+5) where rnum >= #{num}*5-4	
+		]]>
+		 <!--   <include refid="whereSql"></include>-->
+	</select>
+	<select id='count' parameterType="kr.co.project.PlayerVO" resultType='Integer'>
+		SELECT COUNT(*) FROM player
 	</select>
 </mapper>
+
 
 
 
