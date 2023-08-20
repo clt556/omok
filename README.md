@@ -1,6 +1,10 @@
 # omok
 
 --
+DB의 소실로 진행이 안되지만, jsp와 jquery, spring, mybatis를 사용해서 웹 오목 게임을 구현
+--
+
+--
 아이디 생성
 --
 ![1](https://github.com/clt556/omok/assets/116059720/059d694b-41ac-4b3e-8af4-74683945d128)
