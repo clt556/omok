@@ -29,4 +29,9 @@
 랭크 보기
 --
 ![5](https://github.com/clt556/omok/assets/116059720/208773de-61c4-4280-8ebd-7fe8ef26ea78)
+
+--
+인게임 인터페이스
+--
+grid와 jquery를 사용해 오목판 이미지에 오목알을 둠
 ![6](https://github.com/clt556/omok/assets/116059720/a1b471e2-b08f-4d74-82d2-aea5adb99a38)
