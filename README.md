@@ -13,6 +13,7 @@
 --
 로그인
 --
+우측에는 DB에서 상위 5개의 전적을 order by와 top (oracle 사용)을 사용해서 표시
 ![2](https://github.com/clt556/omok/assets/116059720/d24c718f-bfde-4d03-a276-76ae5a68cb61)
 
 --
