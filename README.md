@@ -36,3 +36,8 @@
 --
 grid와 jquery를 사용해 오목판 이미지에 오목알을 둠
 ![6](https://github.com/clt556/omok/assets/116059720/a1b471e2-b08f-4d74-82d2-aea5adb99a38)
+
+
+![오목쓰](https://github.com/clt556/omok/assets/116059720/560f12df-942e-41a9-8ee4-407c6c0bd443)
+![오목에서 맡은 파트 디자인해온거](https://github.com/clt556/omok/assets/116059720/31db239d-28f8-47e7-a0e3-e43a44ac092f)
+
